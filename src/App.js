@@ -1,12 +1,12 @@
-
-import Inc from './Comp/Inc'
+import Footer from './Components/Footer'
+import Dchange from './Components/DisplayColorChange'
 
 
 function App() {
   return (
     <div className="App">
-    <Inc />
-    <Inc />
+    <Dchange />
+    <Footer />
     </div>
   );
 }
