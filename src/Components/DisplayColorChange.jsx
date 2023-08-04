@@ -21,7 +21,7 @@ document.body.style.background=newColor;
     <div class="flex flex-col mx-auto mt-80 sm:mt-[50rem]">
     <span class="mx-auto bg-slate-300 mb-4 px-4 py-2 rounded text-lg sm:px-8 sm:py-4 sm:mb-8">{color}</span>
     <div class="mx-auto">
-    <button class="bg-black text-white text-xl rounded px-8 py-2 cursor-pointer sm:px-16 sm:py-4" onClick={colorChange}>{color}</button>
+    <button class="bg-black text-white text-xl rounded px-8 py-2 cursor-pointer sm:px-16 sm:py-4" onClick={colorChange}>Change Color</button>
     </div>
     </div>
     );
