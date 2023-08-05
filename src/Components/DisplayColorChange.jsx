@@ -11,6 +11,17 @@ const rgb = `rgb(${red}, ${green}, ${blue})`;
 return rgb;
 }
 
+useEffect(()=>{
+  console.log("color is changed to " + color)
+  
+  return ()=>console.log("old color is " + color)
+},[color])
+
+useEffect(()=>{
+  console.log("DisplayChange Module Has ben Mounted")
+  return ()=>console.log("DisplayChange Module Has benn Un-Mounted")
+},[color])
+
 const colorChange = ()=>{
 const newColor = genRandomColor();
 setColor(newColor);
@@ -24,6 +35,7 @@ document.body.style.background=newColor;
     <button class="bg-black text-white text-xl rounded px-8 py-2 cursor-pointer sm:px-16 sm:py-4" onClick={colorChange}>Change Color</button>
     </div>
     </div>
+    
     );
 };
 
